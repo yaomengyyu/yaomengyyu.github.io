@@ -6,18 +6,33 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>pop | liujiahao</title>
+  <title>gulp 入门教程 | liujiahao</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="四海沉浮吾独断">
+  <meta name="description" content="安装gulp 在安装gulp之前你需要安装Node.js。 如果你还没有安装Node,你可以在这里下载。 安装完Node.js,使用Terminal(终端，win下是cmd)用下面命令安装Gulp
+1$ sudo npm install gulp -g
+创建gulp项目cd gulp 进入项目
+1npm install
+然后会产生一个package.json文件 这里不需要改动
+下一步1npm i">
 <meta property="og:type" content="article">
-<meta property="og:title" content="pop">
-<meta property="og:url" content="http://yoursite.com/2016/11/26/pop/index.html">
+<meta property="og:title" content="gulp 入门教程">
+<meta property="og:url" content="http://yoursite.com/2015/09/30/gulp/index.html">
 <meta property="og:site_name" content="liujiahao">
-<meta property="og:description" content="四海沉浮吾独断">
-<meta property="og:updated_time" content="2016-11-26T01:49:54.000Z">
+<meta property="og:description" content="安装gulp 在安装gulp之前你需要安装Node.js。 如果你还没有安装Node,你可以在这里下载。 安装完Node.js,使用Terminal(终端，win下是cmd)用下面命令安装Gulp
+1$ sudo npm install gulp -g
+创建gulp项目cd gulp 进入项目
+1npm install
+然后会产生一个package.json文件 这里不需要改动
+下一步1npm i">
+<meta property="og:updated_time" content="2016-11-26T03:47:53.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="pop">
-<meta name="twitter:description" content="四海沉浮吾独断">
+<meta name="twitter:title" content="gulp 入门教程">
+<meta name="twitter:description" content="安装gulp 在安装gulp之前你需要安装Node.js。 如果你还没有安装Node,你可以在这里下载。 安装完Node.js,使用Terminal(终端，win下是cmd)用下面命令安装Gulp
+1$ sudo npm install gulp -g
+创建gulp项目cd gulp 进入项目
+1npm install
+然后会产生一个package.json文件 这里不需要改动
+下一步1npm i">
   
     <link rel="alternative" href="/atom.xml" title="liujiahao" type="application/atom+xml">
   
@@ -145,7 +160,7 @@
 </nav>
 
       <div class="body-wrap">
-        <article id="post-pop" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-gulp" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <input type="hidden" class="isFancy" />
@@ -155,7 +170,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      pop
+      gulp 入门教程
     </h1>
   
 
@@ -163,13 +178,25 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h3 id="安装gulp"><a href="#安装gulp" class="headerlink" title="安装gulp"></a>安装gulp</h3><p> 在安装gulp之前你需要安装Node.js。<br> 如果你还没有安装Node,你可以在<a href="http://nodejs.cn/" target="_blank" rel="external">这里</a>下载。<br> 安装完Node.js,使用Terminal(终端，win下是cmd)用下面命令安装Gulp</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo npm install gulp -g</div></pre></td></tr></table></figure>
+<h3 id="创建gulp项目"><a href="#创建gulp项目" class="headerlink" title="创建gulp项目"></a>创建gulp项目</h3><p>cd gulp 进入项目</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure>
+<p>然后会产生一个package.json文件 这里不需要改动</p>
+<p>下一步<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install gulp gulp-sass gulp-jade --save</div></pre></td></tr></table></figure></p>
+<p>执行完之后，gulp将创建node_modules文件夹，里面有个gulp文件夹。</p>
+<p>然后下载配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install gulp-watch</div><div class="line">npm install gulp-clean-css</div><div class="line">npm install gulp-uglify</div></pre></td></tr></table></figure>
+<p>手动新建gulpfile.js<br>然后配置gulpfile.js文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">var jade=require(&quot;gulp-jade&quot;);</div><div class="line">var sass=require(&quot;gulp-sass&quot;);</div><div class="line">var watch=require(&quot;gulp-watch&quot;);</div><div class="line">var gulp=require(&quot;gulp&quot;);</div><div class="line">var cleancss=require(&quot;gulp-clean-css&quot;);</div><div class="line">var miniJS=require(&quot;gulp-uglify&quot;);</div><div class="line">gulp.task(&quot;default&quot;,[&quot;watch&quot;],function()&#123;</div><div class="line"></div><div class="line">&#125;)</div><div class="line">gulp.task(&quot;date&quot;,function()&#123;</div><div class="line">	gulp.src(&quot;jade/*.jade&quot;)</div><div class="line">	.pipe(jade(&#123;</div><div class="line">		pretty:true</div><div class="line">	&#125;))</div><div class="line">	.pipe(gulp.dest(&quot;html/&quot;))</div><div class="line">&#125;)</div><div class="line">gulp.task(&quot;sass&quot;,function()&#123;</div><div class="line">	gulp.src(&quot;sass/*.scss&quot;)</div><div class="line">	.pipe(sass(&#123;</div><div class="line">		pretty:true</div><div class="line">	&#125;))</div><div class="line">	.pipe(gulp.dest(&quot;css/&quot;))</div><div class="line">&#125;)</div><div class="line">gulp.task(&quot;watch&quot;,function()&#123;</div><div class="line">	gulp.watch(&quot;jade/*.jade&quot;,[&quot;date&quot;])</div><div class="line">	gulp.watch(&quot;sass/*.scss&quot;,[&quot;sass&quot;])</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<p>新建jade sass html css 文件夹</p>
+<p>最后cd 项目 gulp运行一下就ok啦！</p>
+
       
     </div>
     <div class="article-info article-info-index">
       
-      <a href="/2016/11/26/pop/" class="archive-article-date">
-  	<time datetime="2016-11-26T01:49:54.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-26</time>
+      <a href="/2015/09/30/gulp/" class="archive-article-date">
+  	<time datetime="2015-09-30T03:28:25.000Z" itemprop="datePublished"><i class="icon-clock"></i>2015-09-30</time>
 </a>
       
       
@@ -182,11 +209,15 @@
   
 <nav id="article-nav">
   
-  
-    <a href="/2015/10/15/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">js~点击轮播</div>
-      <i class="icon-circle-right"></i>
+    <a href="/2015/10/15/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          js~点击轮播
+        
+      </div>
     </a>
+  
   
 </nav>
 
