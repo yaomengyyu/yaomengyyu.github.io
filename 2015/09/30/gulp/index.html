@@ -24,7 +24,8 @@
 1npm init
 然后会产生一个package.json文件 这里不需要改动
 下一步1npm inst">
-<meta property="og:updated_time" content="2016-12-02T01:54:04.000Z">
+<meta property="og:image" content="http://yoursite.com/../img/hh.png">
+<meta property="og:updated_time" content="2016-12-06T13:51:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="gulp 入门教程">
 <meta name="twitter:description" content="安装gulp 在安装gulp之前你需要安装Node.js。 如果你还没有安装Node,你可以在这里下载。 安装完Node.js,使用Terminal(终端，win下是cmd)用下面命令安装Gulp
@@ -33,6 +34,7 @@
 1npm init
 然后会产生一个package.json文件 这里不需要改动
 下一步1npm inst">
+<meta name="twitter:image" content="http://yoursite.com/../img/hh.png">
   
     <link rel="alternative" href="/atom.xml" title="南柯一梦" type="application/atom+xml">
   
@@ -190,6 +192,7 @@
 <p>手动新建gulpfile.js<br>然后配置gulpfile.js文件<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">var jade=require(&quot;gulp-jade&quot;);</div><div class="line">var sass=require(&quot;gulp-sass&quot;);</div><div class="line">var watch=require(&quot;gulp-watch&quot;);</div><div class="line">var gulp=require(&quot;gulp&quot;);</div><div class="line">var cleancss=require(&quot;gulp-clean-css&quot;);</div><div class="line">var miniJS=require(&quot;gulp-uglify&quot;);</div><div class="line">gulp.task(&quot;default&quot;,[&quot;watch&quot;],function()&#123;</div><div class="line"></div><div class="line">&#125;)</div><div class="line">gulp.task(&quot;date&quot;,function()&#123;</div><div class="line">	gulp.src(&quot;jade/*.jade&quot;)</div><div class="line">	.pipe(jade(&#123;</div><div class="line">		pretty:true</div><div class="line">	&#125;))</div><div class="line">	.pipe(gulp.dest(&quot;html/&quot;))</div><div class="line">&#125;)</div><div class="line">gulp.task(&quot;sass&quot;,function()&#123;</div><div class="line">	gulp.src(&quot;sass/*.scss&quot;)</div><div class="line">	.pipe(sass(&#123;</div><div class="line">		pretty:true</div><div class="line">	&#125;))</div><div class="line">	.pipe(gulp.dest(&quot;css/&quot;))</div><div class="line">&#125;)</div><div class="line">gulp.task(&quot;watch&quot;,function()&#123;</div><div class="line">	gulp.watch(&quot;jade/*.jade&quot;,[&quot;date&quot;])</div><div class="line">	gulp.watch(&quot;sass/*.scss&quot;,[&quot;sass&quot;])</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
 <p>新建jade sass html css 文件夹</p>
 <p>最后cd 项目 gulp运行一下就ok啦！</p>
+<h4 id="最后的效果是这样的"><a href="#最后的效果是这样的" class="headerlink" title="最后的效果是这样的"></a>最后的效果是这样的</h4><p><img src="../img/hh.png" alt="Alt text"></p>
 
       
     </div>
