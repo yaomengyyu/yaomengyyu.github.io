@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://yoursite.com">
+  <title>Canvas系列之贪吃蛇 | 南柯一梦</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="准备canvas画布  食物  蛇 键盘事件
+1.canvas画布绘制就很简单啦 你可以给点你喜欢的样式
+123&amp;lt;canvas width=&quot;600&quot; height=&quot;400&quot;&amp;gt;	你的浏览器不支持canvas，请使用chrome或更高版本的浏览器！&amp;lt;/canvas&amp;gt;
+当然，你要先获取画布哦
+12var canvas=document.querySelector(&apos;canva">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Canvas系列之贪吃蛇">
+<meta property="og:url" content="http://yoursite.com/2016/11/17/canvas-snake/index.html">
+<meta property="og:site_name" content="南柯一梦">
+<meta property="og:description" content="准备canvas画布  食物  蛇 键盘事件
+1.canvas画布绘制就很简单啦 你可以给点你喜欢的样式
+123&amp;lt;canvas width=&quot;600&quot; height=&quot;400&quot;&amp;gt;	你的浏览器不支持canvas，请使用chrome或更高版本的浏览器！&amp;lt;/canvas&amp;gt;
+当然，你要先获取画布哦
+12var canvas=document.querySelector(&apos;canva">
+<meta property="og:image" content="http://a1.qpic.cn/psb?/V12txxLC164DyB/D4d9FGDdAF3pHgnpghynJDyMQ41Xv3fuoVaPzULuIKs!/b/dP8AAAAAAAAA&bo=bgLFAgAAAAADB4k!&rf=viewer_4">
+<meta property="og:updated_time" content="2016-11-17T12:27:18.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Canvas系列之贪吃蛇">
+<meta name="twitter:description" content="准备canvas画布  食物  蛇 键盘事件
+1.canvas画布绘制就很简单啦 你可以给点你喜欢的样式
+123&amp;lt;canvas width=&quot;600&quot; height=&quot;400&quot;&amp;gt;	你的浏览器不支持canvas，请使用chrome或更高版本的浏览器！&amp;lt;/canvas&amp;gt;
+当然，你要先获取画布哦
+12var canvas=document.querySelector(&apos;canva">
+<meta name="twitter:image" content="http://a1.qpic.cn/psb?/V12txxLC164DyB/D4d9FGDdAF3pHgnpghynJDyMQ41Xv3fuoVaPzULuIKs!/b/dP8AAAAAAAAA&bo=bgLFAgAAAAADB4k!&rf=viewer_4">
+  
+    <link rel="alternative" href="/atom.xml" title="南柯一梦" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="http://img0.imgtn.bdimg.com/it/u=2968861870,3906896148&fm=21&gp=0.jpg">
+  
+  <link rel="stylesheet" href="/main.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://img0.imgtn.bdimg.com/it/u=2968861870,3906896148&amp;fm=21&amp;gp=0.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">刘家浩</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">666</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">刘家浩</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="http://img0.imgtn.bdimg.com/it/u=2968861870,3906896148&amp;fm=21&amp;gp=0.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">刘家浩</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">666</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-canvas-snake" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Canvas系列之贪吃蛇
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>canvas画布  食物  蛇 键盘事件</p>
+<h3 id="1-canvas画布"><a href="#1-canvas画布" class="headerlink" title="1.canvas画布"></a>1.canvas画布</h3><p>绘制就很简单啦 你可以给点你喜欢的样式</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">width</span>=<span class="string">"600"</span> <span class="attr">height</span>=<span class="string">"400"</span>&gt;</span></div><div class="line">	你的浏览器不支持canvas，请使用chrome或更高版本的浏览器！</div><div class="line"><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>当然，你要先获取画布哦</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> canvas=<span class="built_in">document</span>.querySelector(<span class="string">'canvas'</span>);</div><div class="line">	<span class="keyword">var</span> ctx=canvas.getContext(<span class="string">'2d'</span>);</div></pre></td></tr></table></figure>
+<h3 id="2-随机放置食物"><a href="#2-随机放置食物" class="headerlink" title="2.随机放置食物"></a>2.随机放置食物</h3><p>x表示食物的大小  map是存放蛇身单元位置</p>
+<pre><code>var foodx=foody=?;定义食物的起点坐标
+</code></pre><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">food</span>(<span class="params">x</span>)</span>&#123;</div><div class="line">	foodx=<span class="built_in">Math</span>.ceil(<span class="built_in">Math</span>.random()*canvas.width/x)*x-x;</div><div class="line">	foody=<span class="built_in">Math</span>.ceil(<span class="built_in">Math</span>.random()*canvas.height/x)*x-x;</div><div class="line">	<span class="comment">//判断不让食物随机到蛇身上</span></div><div class="line">	map.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">		<span class="keyword">if</span> (e.x==foodx&amp;&amp;e.y==foody) &#123;</div><div class="line">			food(<span class="number">10</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;)</div><div class="line">	ctx.fillStyle=<span class="string">'#000'</span>;<span class="comment">//食物颜色</span></div><div class="line">	ctx.fillRect(foodx,foody,x,x);<span class="comment">//绘制矩形</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="3-蛇的移动及绘制"><a href="#3-蛇的移动及绘制" class="headerlink" title="3.蛇的移动及绘制"></a>3.蛇的移动及绘制</h3><p>1.先做一个移动方向的判断</p>
+<p>2.在做一个是否撞墙和撞自身的判断，这里用了<span style="color:red">forEach</span>,你也可以用for循环代替</p>
+<p>3.一个保证起始蛇身的判断</p>
+<p>4.接下就就是绘制每一个蛇身单元，多个蛇身单元组成蛇身</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">moveSnake</span>(<span class="params"></span>)</span>&#123;</div><div class="line">		<span class="keyword">switch</span>(direction)&#123;</div><div class="line">			<span class="keyword">case</span> <span class="number">37</span>:x-=size;<span class="keyword">break</span>;<span class="comment">//左</span></div><div class="line">			<span class="keyword">case</span> <span class="number">38</span>:y-=size;<span class="keyword">break</span>;<span class="comment">//上</span></div><div class="line">			<span class="keyword">case</span> <span class="number">39</span>:x+=size;<span class="keyword">break</span>;<span class="comment">//右</span></div><div class="line">			<span class="keyword">case</span> <span class="number">40</span>:y+=size;<span class="keyword">break</span>;<span class="comment">//下</span></div><div class="line">		&#125;</div><div class="line">		<span class="comment">//判断是否撞墙，撞墙则结束</span></div><div class="line">		<span class="keyword">if</span> (x&lt;<span class="number">0</span>||y&lt;<span class="number">0</span>||x+size&gt;canvas.width||y+size&gt;canvas.height) &#123;</div><div class="line">			end();</div><div class="line">		&#125;</div><div class="line">		map.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">			<span class="keyword">if</span> (e.x==x&amp;&amp;e.y==y) &#123;</div><div class="line">				end();</div><div class="line">			&#125;</div><div class="line">		&#125;)</div><div class="line">		<span class="keyword">if</span> (map.length&gt;snakeLength) &#123;<span class="comment">//保持蛇长</span></div><div class="line">			<span class="keyword">var</span> last=map.shift();<span class="comment">//删除数组第一项，并返回该元素</span></div><div class="line">			ctx.clearRect(last.x,last.y,size,size)</div><div class="line">		&#125;</div><div class="line">		<span class="comment">//把单元蛇身保存并绘制</span></div><div class="line">		map.push(&#123;<span class="string">"x"</span>:x,<span class="string">"y"</span>:y&#125;);</div><div class="line">		ctx.fillStyle=<span class="string">'cyan'</span>;</div><div class="line">		ctx.fillRect(x,y,size,size);</div><div class="line">		<span class="keyword">if</span> (x==foodx&amp;&amp;y==foody) &#123;</div><div class="line">			food(<span class="number">10</span>);</div><div class="line">			snakeLength++;</div><div class="line">			i++;</div><div class="line">			score.value=i*<span class="number">10</span>;</div><div class="line">		&#125;</div><div class="line">	&#125;</div></pre></td></tr></table></figure>
+<h3 id="这里写了当游戏结束时，显示的函数"><a href="#这里写了当游戏结束时，显示的函数" class="headerlink" title="这里写了当游戏结束时，显示的函数"></a>这里写了当游戏结束时，显示的函数</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">end</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	clearInterval(timer);</div><div class="line">	<span class="keyword">if</span> (score.value&lt;<span class="number">100</span>) &#123;</div><div class="line">		alert(<span class="string">'继续努力哦!\nGAME OVER'</span>)</div><div class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span> (score.value&gt;=<span class="number">100</span>) &#123;</div><div class="line">		alert(<span class="string">'哎呦，不错!\nGAME OVER'</span>)</div><div class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span> (score.value&gt;=<span class="number">400</span>) &#123;</div><div class="line">		alert(<span class="string">'非常棒!\nGAME OVER'</span>)</div><div class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span> (score.value&gt;=<span class="number">800</span>) &#123;</div><div class="line">		alert(<span class="string">'你已无人能挡!\nGAME OVER'</span>)</div><div class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span> (score.value&gt;=<span class="number">1600</span>) &#123;</div><div class="line">		alert(<span class="string">'无敌战神!\nGAME OVER'</span>)</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">window</span>.location=<span class="built_in">window</span>.location;<span class="comment">//刷新页面</span></div><div class="line">	<span class="keyword">return</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="增加游戏难度"><a href="#增加游戏难度" class="headerlink" title="增加游戏难度"></a>增加游戏难度</h3><p>你可以发挥你的想象来则加游戏难度，比如增加蛇的运动速度，canvas的画布变小等等</p>
+<h2 id="接下来就要讲讲键盘事件了"><a href="#接下来就要讲讲键盘事件了" class="headerlink" title="接下来就要讲讲键盘事件了"></a>接下来就要讲讲键盘事件了</h2><p>下面是键盘对应值：<br><img src="http://a1.qpic.cn/psb?/V12txxLC164DyB/D4d9FGDdAF3pHgnpghynJDyMQ41Xv3fuoVaPzULuIKs!/b/dP8AAAAAAAAA&amp;bo=bgLFAgAAAAADB4k!&amp;rf=viewer_4" alt="keycode"></p>
+<p>按下键盘改变方向，这里我做了个space控制游戏的开始和暂停设置</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> code=<span class="literal">null</span>;</div><div class="line"><span class="keyword">var</span> space=<span class="literal">true</span>;</div><div class="line"><span class="built_in">document</span>.onkeydown=<span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</div><div class="line">	<span class="keyword">if</span> (event.keyCode==<span class="number">32</span>) &#123;</div><div class="line">		<span class="keyword">if</span> (space) &#123;</div><div class="line">			timer=setInterval(moveSnake,<span class="number">60</span>);</div><div class="line">			space=!space;</div><div class="line">		&#125;<span class="keyword">else</span>&#123;</div><div class="line">			clearInterval(timer);</div><div class="line">			space=!space;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="comment">//判断如果是相反键则失效</span></div><div class="line">	<span class="keyword">if</span> (<span class="built_in">Math</span>.abs(code-event.keyCode)==<span class="number">2</span>) &#123;</div><div class="line">		code=code;</div><div class="line">	&#125;<span class="keyword">else</span>&#123;</div><div class="line">		code=event.keyCode;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">switch</span>(code)&#123;</div><div class="line">		<span class="keyword">case</span> <span class="number">37</span>:direction=<span class="number">37</span>;<span class="keyword">break</span>;<span class="comment">//左</span></div><div class="line">		<span class="keyword">case</span> <span class="number">38</span>:direction=<span class="number">38</span>;<span class="keyword">break</span>;<span class="comment">//下</span></div><div class="line">		<span class="keyword">case</span> <span class="number">39</span>:direction=<span class="number">39</span>;<span class="keyword">break</span>;<span class="comment">//右</span></div><div class="line">		<span class="keyword">case</span> <span class="number">40</span>:direction=<span class="number">40</span>;<span class="keyword">break</span>;<span class="comment">//上</span></div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>如果需要源码，请前往：我的 <a href="https://github.com/guardLtw/snake" target="_blank" rel="external">github</a>,转载请注明出处，谢谢！</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/17/canvas-snake/" class="archive-article-date">
+  	<time datetime="2016-11-17T11:56:21.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-17</time>
+</a>
+      
+      
+	<div class="article-category tagcloud">
+	<i class="icon-price-tags"></i>
+	<a class="article-category-link" href="/categories/Canvas/">Canvas</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/11/18/canvas-fivestar/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Canvas系列之五角星
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/11/16/css-clock/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">简易时钟</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 刘家浩
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/心-感/" style="font-size: 10px;">心 感</a> <a href="/tags/诗词/" style="font-size: 20px;">诗词</a>
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="https://jasonellen.github.io/">南南的博客</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="https://yinxiaoqiang11.github.io">小强的博客</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

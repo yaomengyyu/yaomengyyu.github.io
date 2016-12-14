@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://yoursite.com">
+  <title>非常有用的php技巧 | 南柯一梦</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="今天谈谈一些关于改善和优化PHP代码的提示和技巧。
+主要是由封装函数思想，需要改变的地方可以设置变量，而不是一个字符串，说的可能不太清楚，等你遇到了。。。。也就明白了
+不要使用相对路径，要定义一个根路径require_once(&amp;apos;../../xxx.php&amp;apos;);
+这种方法有很多缺点：
+1.它首先搜索php包括路径中的指定目录，然后查看当前目录。因此，会检查许多目录。
+2.当一个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="非常有用的php技巧">
+<meta property="og:url" content="http://yoursite.com/2016/12/02/php2/index.html">
+<meta property="og:site_name" content="南柯一梦">
+<meta property="og:description" content="今天谈谈一些关于改善和优化PHP代码的提示和技巧。
+主要是由封装函数思想，需要改变的地方可以设置变量，而不是一个字符串，说的可能不太清楚，等你遇到了。。。。也就明白了
+不要使用相对路径，要定义一个根路径require_once(&amp;apos;../../xxx.php&amp;apos;);
+这种方法有很多缺点：
+1.它首先搜索php包括路径中的指定目录，然后查看当前目录。因此，会检查许多目录。
+2.当一个">
+<meta property="og:updated_time" content="2016-12-03T14:46:15.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="非常有用的php技巧">
+<meta name="twitter:description" content="今天谈谈一些关于改善和优化PHP代码的提示和技巧。
+主要是由封装函数思想，需要改变的地方可以设置变量，而不是一个字符串，说的可能不太清楚，等你遇到了。。。。也就明白了
+不要使用相对路径，要定义一个根路径require_once(&amp;apos;../../xxx.php&amp;apos;);
+这种方法有很多缺点：
+1.它首先搜索php包括路径中的指定目录，然后查看当前目录。因此，会检查许多目录。
+2.当一个">
+  
+    <link rel="alternative" href="/atom.xml" title="南柯一梦" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="http://img0.imgtn.bdimg.com/it/u=2968861870,3906896148&fm=21&gp=0.jpg">
+  
+  <link rel="stylesheet" href="/main.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://img0.imgtn.bdimg.com/it/u=2968861870,3906896148&amp;fm=21&amp;gp=0.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">刘家浩</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">666</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">刘家浩</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="http://img0.imgtn.bdimg.com/it/u=2968861870,3906896148&amp;fm=21&amp;gp=0.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">刘家浩</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">666</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-php2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      非常有用的php技巧
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天谈谈一些关于改善和优化PHP代码的提示和技巧。</p>
+<p>主要是由封装函数思想，需要改变的地方可以设置变量，而不是一个字符串，说的可能不太清楚，等你遇到了。。。。也就明白了</p>
+<h3 id="不要使用相对路径，要定义一个根路径"><a href="#不要使用相对路径，要定义一个根路径" class="headerlink" title="不要使用相对路径，要定义一个根路径"></a>不要使用相对路径，要定义一个根路径</h3><pre><code>require_once(&apos;../../xxx.php&apos;);
+</code></pre><p>这种方法有很多缺点：</p>
+<p>1.它首先搜索php包括路径中的指定目录，然后查看当前目录。因此，会检查许多目录。</p>
+<p>2.当一个脚本被包含在另一个脚本的不同目录中时，它的基本目录变为包含脚本的目录。</p>
+<p>3.另一个问题是，当一个脚本从cron运行时，它可能不会将它的父目录作为工作目录。</p>
+<h3 id="不使用require，包括require-once或include-once"><a href="#不使用require，包括require-once或include-once" class="headerlink" title="不使用require，包括require_once或include_once"></a>不使用require，包括require_once或include_once</h3><p>你的脚本上可能会包括各种文件，如类库，实用程序文件和辅助函数等，就像这些：</p>
+<pre><code>require_once(&apos;../Database1.php&apos;);
+require_once(&apos;../Database2.php&apos;);
+require_once(&apos;../Database3.php&apos;);
+</code></pre><p>这相当粗糙。代码需要更加灵活。写好辅助函数可以更容易地包含东西。举个例子：</p>
+<pre><code>function load_class($class_name)
+{
+$path = ....;//path to the class file
+
+if(file_exists($path))
+{
+    require_once( $path ); 
+}
+}
+</code></pre><p>说白了，有重复样式的就封装成一个函数，这样做可以完成很多事情：</p>
+<p>1.为同一个类文件搜索多个目录。</p>
+<p>2.轻松更改包含类文件的目录，而不破坏任何地方的代码。</p>
+<p>3.使用类似的函数用于加载包含辅助函数、HTML内容等的文件。</p>
+<h3 id="不要在你的应用程序中gzip输出，让apache来做"><a href="#不要在你的应用程序中gzip输出，让apache来做" class="headerlink" title="不要在你的应用程序中gzip输出，让apache来做"></a>不要在你的应用程序中gzip输出，让apache来做</h3><p>考虑使用ob_gzhandler？不，别这样做。它没有任何意义。PHP应该是来写应用程序的。不要担心PHP中有关如何优化在服务器和浏览器之间传输的数据。</p>
+<p>使用apache mod_gzip/mod_deflate通过.htaccess文件压缩内容。</p>
+<h3 id="改变应用程序创建的文件的权限"><a href="#改变应用程序创建的文件的权限" class="headerlink" title="改变应用程序创建的文件的权限"></a>改变应用程序创建的文件的权限</h3><p>当在Linux环境下工作时，权限处理会浪费你很多时间。因此，只要你的php应用程序创建了一些文件，那就应该修改它们的权限以确保它们在外面“平易近人”。否则，例如，文件是由“php”用户创建的，而你作为一个不同的用户，系统就不会让你访问或打开文件，然后你必须努力获得root权限，更改文件权限等等。</p>
+<pre><code>// Read and write for owner, read for everybody else
+chmod(&quot;/somedir/somefile&quot;, 0644);
+
+// Everything for owner, read and execute for others
+chmod(&quot;/somedir/somefile&quot;, 0755);
+</code></pre><h3 id="使用php过滤器验证数据"><a href="#使用php过滤器验证数据" class="headerlink" title="使用php过滤器验证数据"></a>使用php过滤器验证数据</h3><p>你是不是使用正则表达式来验证如电子邮件，IP地址等值？是的，每个人都是这样做的。现在，让我们试试一个不同的东西，那就是过滤器。</p>
+<p>php过滤器扩展程序将提供简单的方法来有效验证或校验值。</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/12/02/php2/" class="archive-article-date">
+  	<time datetime="2016-12-02T14:05:06.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-12-02</time>
+</a>
+      
+      
+	<div class="article-category tagcloud">
+	<i class="icon-price-tags"></i>
+	<a class="article-category-link" href="/categories/Database/">Database</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/12/03/mysql1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          php的MySQL连接
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/12/01/php1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">你需要知道的php基础</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 刘家浩
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/心-感/" style="font-size: 10px;">心 感</a> <a href="/tags/诗词/" style="font-size: 20px;">诗词</a>
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="https://jasonellen.github.io/">南南的博客</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="https://yinxiaoqiang11.github.io">小强的博客</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

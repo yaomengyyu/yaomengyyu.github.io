@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://yoursite.com">
+  <title>JavaScript你必须要知道的事件和视窗单位 | 南柯一梦</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="事件个人认为JavaScript事件就是用来表现js行为的，下面说说js常用的事件
+onclick  点击事件，顾名思义点击触发事件
+onmouseover 鼠标移入事件，鼠标移入触发
+onmouseout  鼠标移出事件，鼠标移出触发
+onmousemove 鼠标移动事件，鼠标移动触发
+onload 预加载，等所有都加载完成后，执行
+onfocus 当元素被聚焦的时候触发
+onblur 当元素失">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JavaScript你必须要知道的事件和视窗单位">
+<meta property="og:url" content="http://yoursite.com/2016/11/29/event/index.html">
+<meta property="og:site_name" content="南柯一梦">
+<meta property="og:description" content="事件个人认为JavaScript事件就是用来表现js行为的，下面说说js常用的事件
+onclick  点击事件，顾名思义点击触发事件
+onmouseover 鼠标移入事件，鼠标移入触发
+onmouseout  鼠标移出事件，鼠标移出触发
+onmousemove 鼠标移动事件，鼠标移动触发
+onload 预加载，等所有都加载完成后，执行
+onfocus 当元素被聚焦的时候触发
+onblur 当元素失">
+<meta property="og:updated_time" content="2016-11-29T15:13:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JavaScript你必须要知道的事件和视窗单位">
+<meta name="twitter:description" content="事件个人认为JavaScript事件就是用来表现js行为的，下面说说js常用的事件
+onclick  点击事件，顾名思义点击触发事件
+onmouseover 鼠标移入事件，鼠标移入触发
+onmouseout  鼠标移出事件，鼠标移出触发
+onmousemove 鼠标移动事件，鼠标移动触发
+onload 预加载，等所有都加载完成后，执行
+onfocus 当元素被聚焦的时候触发
+onblur 当元素失">
+  
+    <link rel="alternative" href="/atom.xml" title="南柯一梦" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="http://img0.imgtn.bdimg.com/it/u=2968861870,3906896148&fm=21&gp=0.jpg">
+  
+  <link rel="stylesheet" href="/main.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://img0.imgtn.bdimg.com/it/u=2968861870,3906896148&amp;fm=21&amp;gp=0.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">刘家浩</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">666</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">刘家浩</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="http://img0.imgtn.bdimg.com/it/u=2968861870,3906896148&amp;fm=21&amp;gp=0.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">刘家浩</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">666</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-event" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JavaScript你必须要知道的事件和视窗单位
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><p>个人认为JavaScript事件就是用来表现js行为的，下面说说js常用的事件</p>
+<p>onclick  点击事件，顾名思义点击触发事件</p>
+<p>onmouseover 鼠标移入事件，鼠标移入触发</p>
+<p>onmouseout  鼠标移出事件，鼠标移出触发</p>
+<p>onmousemove 鼠标移动事件，鼠标移动触发</p>
+<p>onload 预加载，等所有都加载完成后，执行</p>
+<p>onfocus 当元素被聚焦的时候触发</p>
+<p>onblur 当元素失去焦点时触发</p>
+<p>onpropertychange 文本内容实时改变触发 IE独有</p>
+<p>oninput 文本内容实时改变触发 非标准，但支持效果较理想</p>
+<p>onchange 文本内容发生改变，且失去焦点时触</p>
+<h2 id="视窗单位"><a href="#视窗单位" class="headerlink" title="视窗单位"></a>视窗单位</h2><h3 id="浏览器窗口"><a href="#浏览器窗口" class="headerlink" title="浏览器窗口"></a>浏览器窗口</h3><pre><code>innerWidth        浏览器窗口的宽
+
+innerHeight        浏览器窗口的高
+</code></pre><h3 id="元素"><a href="#元素" class="headerlink" title="元素"></a>元素</h3><pre><code>offsetWidth        元素实际的宽度(包含边线)
+
+offsetHeight    元素实际的高度(包含边线)
+
+clientWidth        =width+padding    元素宽度(不包含边线)    
+clientHeight    =height+padding    元素高度(不包含边线)
+
+offsetParent    返回距离元素最近设置position，非static样式的元素节点，没有返回body的节点
+
+offsetLeft    返回元素与offsetParent的横向距离
+
+offsetTop    返回元素与offsetParent的竖直距离
+
+scrollLeft        元素的横向滚动条移动的距离 可以读取 可以设置
+
+scrollTop        元素的竖直滚动条移动的距离 可以读取 可以设置
+
+scrollWidth         对象的实际内容的宽度，不包边线宽度
+
+scrollHeight    对象的实际内容的高度，不包边线宽度
+</code></pre><h3 id="鼠标"><a href="#鼠标" class="headerlink" title="鼠标"></a>鼠标</h3><pre><code>clientx  鼠标距离窗口的宽   标准
+clienty  鼠标距离窗口的高
+
+offsetx  鼠标相对距离当前元素的宽  ie chrome支持
+offsety  鼠标相对距离当前元素的高
+</code></pre><p>都是平时用得到的，整理了一下，希望对你有所帮助。</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/29/event/" class="archive-article-date">
+  	<time datetime="2016-11-29T14:42:57.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-29</time>
+</a>
+      
+      
+	<div class="article-category tagcloud">
+	<i class="icon-price-tags"></i>
+	<a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/12/01/php1/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          你需要知道的php基础
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/11/28/html特殊符号/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTML特殊符号</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 刘家浩
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/心-感/" style="font-size: 10px;">心 感</a> <a href="/tags/诗词/" style="font-size: 20px;">诗词</a>
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="https://jasonellen.github.io/">南南的博客</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="https://yinxiaoqiang11.github.io">小强的博客</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>

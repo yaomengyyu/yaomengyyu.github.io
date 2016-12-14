@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="http://yoursite.com">
+  <title>南柯一梦</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="四海沉浮吾独断">
+<meta property="og:type" content="website">
+<meta property="og:title" content="南柯一梦">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:site_name" content="南柯一梦">
+<meta property="og:description" content="四海沉浮吾独断">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="南柯一梦">
+<meta name="twitter:description" content="四海沉浮吾独断">
+  
+    <link rel="alternative" href="/atom.xml" title="南柯一梦" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="http://img0.imgtn.bdimg.com/it/u=2968861870,3906896148&fm=21&gp=0.jpg">
+  
+  <link rel="stylesheet" href="/main.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://img0.imgtn.bdimg.com/it/u=2968861870,3906896148&amp;fm=21&amp;gp=0.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">刘家浩</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">666</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="#" title="github">github</a>
+		        
+					<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+		        
+					<a class="rss" target="_blank" href="#" title="rss">rss</a>
+		        
+					<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-list"></i></div>
+  		<h1 class="header-author js-mobile-header hide">刘家浩</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="http://img0.imgtn.bdimg.com/it/u=2968861870,3906896148&amp;fm=21&amp;gp=0.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">刘家浩</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">666</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/随笔">随笔</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        
+  
+    <article id="post-mysql" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/25/mysql/">MySQL之增删改查</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1-增加"><a href="#1-增加" class="headerlink" title="1.增加"></a>1.增加</h3><p>INSERT INTO 表名（字段一，字段二，字段三）VALUES（值一，值二，值三）</p>
+<h3 id="2-删除"><a href="#2-删除" class="headerlink" title="2.删除"></a>2.删除</h3><p>DELETE FROM 表名 WHERE 条件</p>
+<p>条件可用：AND OR NOT IN</p>
+<h3 id="3-修改"><a href="#3-修改" class="headerlink" title="3.修改"></a>3.修改</h3><p>UPDATE 表名 SET 修改内容 WHERE 条件语句</p>
+<h3 id="4-查询"><a href="#4-查询" class="headerlink" title="4.查询"></a>4.查询</h3><p>SELECT 字段 FROM 表名 WHERE 条件语句</p>
+<p>倒序查询  SELECT * FROM 表名(<code>users</code>) ORDER BY id DESC</p>
+<p>默认正序  SELECT * FROM 表名（<code>users</code>） ORDER BY id ASC</p>
+<p>联表查询：将两张表连在一起查询<br>SELECT * FROM 表名一 JOIN 表名二 ON 条件</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/25/mysql/" class="archive-article-date">
+  	<time datetime="2016-11-25T14:26:10.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-25</time>
+</a>
+      
+      
+	<div class="article-category tagcloud">
+	<i class="icon-price-tags"></i>
+	<a class="article-category-link" href="/categories/Database/">Database</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-news1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/23/news1/">微软CEO纳德拉：比起设备本身，对人们如何使用设备更感兴趣</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>　　微软 CEO 纳德拉近日接受了《澳大利亚财经评论》的采访，谈及了对公司移动业务及 Google、亚马逊等对手的态度。纳德拉同时表明，微软仍未放弃推出一款有说服力的移动设备来赢得这个市场的青睐，但并不为此感到焦急。
+　　</p>
+<h3 id="一款失败的产品，并不是员工的职业污点"><a href="#一款失败的产品，并不是员工的职业污点" class="headerlink" title="一款失败的产品，并不是员工的职业污点"></a>一款失败的产品，并不是员工的职业污点</h3><p>　　在采访中，纳德拉首先谈及了对公司人工智能业务及云服务业务的自信，声称凭借这两项业务的盈利能力，微软并不急于全身心投入智能手机市场与苹果、三星正面碰撞。</p>
+<p>　　纳德拉认为，在他接任微软 CEO 的两年半里，微软最大的变化资源更集中，让微软的几个强势领域更加突出。“你得有冒险的胆量去实践一些可能不一定对的事情。”纳德拉称：“就以 Surface 为例，三年前超过一半的人都在质疑，这东西真的有人需要吗？现在呢？就连我们的对手都在认可这款产品。”<br>　　纳德拉把微软形容为“一家拥有成熟产品开发模式”的公司，员工的一个失败的产品或者想法不再被视为是职业污点，这对于保持长期的创新灵感非常重要。</p>
+<h3 id="微软手机到底要等到什么时候？"><a href="#微软手机到底要等到什么时候？" class="headerlink" title="微软手机到底要等到什么时候？"></a>微软手机到底要等到什么时候？</h3><p>　　谈到失误，微软最近让人联想到的失误是去年 7 月的那次高达 76 亿美元的资产减记：为了应对 72 亿美元收购诺基亚后的资金紧张，微软“忍痛”对智能手机业务开展“整体性重组”，并进行 76 亿美元的减值计提，裁员约 7800 人。<br>　　虽然此后微软多次表态不会放弃手机业务，但这次“大地震”的后遗症在纳德拉的这次采访中仍然可见。</p>
+<p>　　“我们不希望被对手牵着走，问题是，我们自己能为客户带来什么？这是我看待公司业务的方式，对待 AI 业务也是如此。”纳德拉在采访中坦言：“如果没有真正的革新，微软并不急于推出更多的设备，比起设备本身，微软对人们如何使用设备更感兴趣。”<br>　　这一点也从微软在云服务、企业办公平台、人工智能等方面的日益重视可见，纳德拉这次也算是官方承认了微软“越来越软”的倾向。而从结果看来，从人满为患的硬件设备领域“战略性撤退”后，微软也确实走出了更 B 端、更服务化的一条新路。</p>
+<p>　　和外界的翘首以盼截然不同，纳德拉在采访中没有提及 Windows Phone 更多进展，但似乎并不为此忧心。</p>
+<h3 id="云计算：微软的合纵连横"><a href="#云计算：微软的合纵连横" class="headerlink" title="云计算：微软的合纵连横"></a>云计算：微软的合纵连横</h3><p>　　凭借 Azure 云的全面拓展，微软云业务在公司里的地位上升已经非常显著。光是在澳大利亚，目前微软已经把云服务深入到区块链旅游公司、板球俱乐部等多种多样的客户。<br>　　在这次采访中，纳德拉更明确点出，微软正在被“基于云计算的人工智能业务”引领着，走向新时代。</p>
+<p>　　但纳德拉也承认，目前站在这个领域顶峰的还有“另外的几家公司”。他指的当然是目前在云计算领域与微软开展激烈竞争的 Google 云、亚马逊 AWS 云、IBM 等老对手。</p>
+<p>　　纳德拉在采访中透露了微软应对这些对手的一个重要方式：对初创公司客户保持关注，它们对云计算和企业服务的巨大需求仍是一块未开发完全的富矿。</p>
+<p>　　“第四次工业革命除了创造了一些美国西海岸（指硅谷）的科技巨头们，还创造了活跃在全球各个角落的初创企业。”言谈中，纳德拉对吸纳初创企业客户的渴望尽显。</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/23/news1/" class="archive-article-date">
+  	<time datetime="2016-11-23T14:11:20.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-23</time>
+</a>
+      
+      
+	<div class="article-category tagcloud">
+	<i class="icon-price-tags"></i>
+	<a class="article-category-link" href="/categories/News/">News</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-css-skill" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/22/css-skill/">CSS中常用的技巧</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>积水成河</p>
+<h3 id="1-登录-注册-那些事"><a href="#1-登录-注册-那些事" class="headerlink" title="1.登录 | 注册 那些事"></a>1.登录 | 注册 那些事</h3><p>相信大家对这个不陌生，登录 | 注册 有很多种写法，我想对你搜easy，你可以直接给文本内容，也可以用定位等等。。。今天我要讲的是用padding让登录 | 注册更唯美。</p>
+<pre><code>&lt;div&gt;登录&lt;span&gt;&lt;/span&gt;注册&lt;/div&gt;    
+样式
+span{
+    font-size:0;
+    padding:11px 6px 1px;
+    margin-left:12px;
+    border-left:2px solid;
+}
+</code></pre><h4 id="效果："><a href="#效果：" class="headerlink" title="效果："></a>效果：</h4><p><img src="http://a3.qpic.cn/psb?/V12txxLC164DyB/1fRPXM0Mu1v6hKxY*8XUGA5T1K0hPDY3EhldQIiRvYM!/b/dHABAAAAAAAA&amp;bo=WgATAAAAAAADB2s!&amp;rf=viewer_4" alt="logreg"></p>
+<h3 id="2-四个不同方向的小三角"><a href="#2-四个不同方向的小三角" class="headerlink" title="2.四个不同方向的小三角"></a>2.四个不同方向的小三角</h3><pre><code>&lt;div class=&quot;triangle top&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;triangle bottom&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;triangle right&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;triangle left&quot;&gt;&lt;/div&gt;
+样式
+.triangle{
+      border:solid 10px transparent;
+      float: left;
+}
+.top{
+     border-bottom-color: red;/*上*/
+}
+.bottom{
+     border-top-color: red;/*下*/
+}
+.right{
+     border-left-color: red;/*右*/
+}
+.left{
+     border-right-color: red;/*左*/
+}
+</code></pre><h3 id="3-自定义光标样式"><a href="#3-自定义光标样式" class="headerlink" title="3.自定义光标样式"></a>3.自定义光标样式</h3><p> text是移动到文本上的那种效果</p>
+<p>   wait是等待的那种效果</p>
+<p>   default是默认效果</p>
+<p>   e-resize是向右的箭头</p>
+<p>   ne-resize是向右上的箭头</p>
+<p>   n-resize是向上的箭头</p>
+<p>   nw-resize是向左上的箭头</p>
+<p>   w-resize是向左的箭头</p>
+<p>   sw-resize是左下的箭头</p>
+<p>   s-resize是向下的箭头</p>
+<p>   se-resize是向右下的箭头</p>
+<p>   pointer 小手效果</p>
+<p>   auto是由系统自动给出效果</p>
+<p>   自定义图片用：cursor: url(图片路径),pointer; 图片格式有可能有兼容性问题自己需要注意。</p>
+<h3 id="4-box-shadow"><a href="#4-box-shadow" class="headerlink" title="4.box-shadow"></a>4.box-shadow</h3><p>box-shadow的特效</p>
+<pre><code>&lt;div class=&quot;div2&quot;&gt;boxshadow不占空间&lt;/div&gt;
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.div2</span>&#123;</div><div class="line">		<span class="attribute">border</span>:<span class="number">3px</span> solid red;</div><div class="line">		<span class="attribute">width</span>:<span class="number">50px</span>;</div><div class="line">		<span class="attribute">height</span>:<span class="number">80px</span>;</div><div class="line">		<span class="attribute">margin</span>:<span class="number">50px</span> auto;</div><div class="line">		<span class="attribute">background-color</span>:gold;</div><div class="line">		<span class="comment">/*box-shadow: inset 10px 10px 0px -5px blue;*/</span></div><div class="line">		<span class="comment">/* box-shadow:水平偏移量 垂直偏移量 模糊度  颜色*/</span></div><div class="line">		<span class="comment">/* box-shadow:inset 水平偏移量 垂直偏移量 模糊度 阴影扩张半径 颜色*/</span></div><div class="line">		<span class="comment">/* inset 表示向内阴影  总体扩张宽度=偏移量+阴影扩张半径*/</span></div><div class="line">		<span class="attribute">box-shadow</span>:<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> blue,<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">10px</span> green,<span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">15px</span> orange,inset <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">5px</span> pink;</div><div class="line">		<span class="attribute">border-radius</span>:<span class="number">20px</span>; </div><div class="line">	&#125;</div></pre></td></tr></table></figure>
+</code></pre><h4 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h4><p><img src="http://a3.qpic.cn/psb?/V12txxLC164DyB/SKJr1LHUXqlHk2NAhk.LxErUds3MB5XBQSphqqXmt3g!/b/dAoBAAAAAAAA&amp;bo=ZAB4AAAAAAADADk!&amp;rf=viewer_4" alt="shadow"></p>
+<h3 id="5-outline"><a href="#5-outline" class="headerlink" title="5.outline"></a>5.outline</h3><p>outline不占空间，其效果可以和阴影媲美哦，但是什么情况适用什么，还需要你判断。</p>
+<pre><code><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.div1</span>&#123;</div><div class="line">		<span class="attribute">border</span>:<span class="number">3px</span> solid red;</div><div class="line">		<span class="attribute">width</span>:<span class="number">50px</span>;</div><div class="line">		<span class="attribute">height</span>:<span class="number">80px</span>;</div><div class="line">		<span class="attribute">margin</span>:<span class="number">50px</span> auto;</div><div class="line">		<span class="attribute">background-color</span>:gold;</div><div class="line">		<span class="attribute">outline</span>:<span class="number">5px</span> solid blue;<span class="comment">/*描边 边框外面一层*/</span></div><div class="line">		<span class="attribute">outline-offset</span>:<span class="number">5px</span>;<span class="comment">/*描边和边框之间的距离  当值为负值的时候outline会收缩*/</span></div><div class="line">	&#125;</div></pre></td></tr></table></figure>
+</code></pre><h4 id="效果-1"><a href="#效果-1" class="headerlink" title="效果"></a>效果</h4><p><img src="http://a3.qpic.cn/psb?/V12txxLC164DyB/OIqOEHJvegV1G1e9daQ8tJfg8oB9AIKkCgZpRj1IFyg!/b/dHwBAAAAAAAA&amp;bo=UwBvAAAAAAADABk!&amp;rf=viewer_4" alt="outline"></p>
+<p>今天先整理到这，以后再添加，希望对你有帮助。</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/22/css-skill/" class="archive-article-date">
+  	<time datetime="2016-11-22T13:04:05.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-22</time>
+</a>
+      
+      
+	<div class="article-category tagcloud">
+	<i class="icon-price-tags"></i>
+	<a class="article-category-link" href="/categories/CSS/">CSS</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-poetryWord1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/20/poetryWord1/">画堂春</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>作者：纳兰性德</p>
+<h2 id="一生一代一双人，争教两处销魂。相思相望不相亲，天为谁春？"><a href="#一生一代一双人，争教两处销魂。相思相望不相亲，天为谁春？" class="headerlink" title="一生一代一双人，争教两处销魂。相思相望不相亲，天为谁春？"></a>一生一代一双人，争教两处销魂。相思相望不相亲，天为谁春？</h2><h2 id="浆向蓝桥易乞，药成碧海难奔。若容相访饮牛津，相对忘贫。"><a href="#浆向蓝桥易乞，药成碧海难奔。若容相访饮牛津，相对忘贫。" class="headerlink" title="浆向蓝桥易乞，药成碧海难奔。若容相访饮牛津，相对忘贫。"></a>浆向蓝桥易乞，药成碧海难奔。若容相访饮牛津，相对忘贫。</h2><h2 id="我："><a href="#我：" class="headerlink" title="我："></a>我：</h2><h3 id="一曲悲欢离合，一朝花开花落。"><a href="#一曲悲欢离合，一朝花开花落。" class="headerlink" title="一曲悲欢离合，一朝花开花落。"></a>一曲悲欢离合，一朝花开花落。</h3><h3 id="一生几十年载，珍惜眼前中人。"><a href="#一生几十年载，珍惜眼前中人。" class="headerlink" title="一生几十年载，珍惜眼前中人。"></a>一生几十年载，珍惜眼前中人。</h3>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/20/poetryWord1/" class="archive-article-date">
+  	<time datetime="2016-11-20T12:15:37.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-20</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/诗词/">诗词</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-philosophy1" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/20/philosophy1/">一万小时定律</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今天浏览掘金，看到前端的10000小时这篇文章就把它读下去了，虽然我对这篇文章感兴趣，但我更对一万小时定律感兴趣，于是就百科一下，与大家分享。</p>
+<h2 id="来源"><a href="#来源" class="headerlink" title="来源"></a>来源</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作家格拉德威尔在《异类》一书中指出：“<br>人们眼中的天才之所以卓越非凡，并非天资超人一等，而是付出了持续不断的努力。1万小时的锤炼是任何人从平凡变成世界级大师的必要条件。“</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;”他将此称为“一万小时定律”。要成为某个领域的专家，需要10000小时，按比例计算就是：如果每天工作八个小时，一周工作五天，那么成为一个领域的专家至少需要五年。这就是一万小时定律。</p>
+<h2 id="理论依据"><a href="#理论依据" class="headerlink" title="理论依据"></a>理论依据</h2><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;英国神经学家DanielLevitin认为，人类脑部确实需要这么长的时间，去理解和吸收一种知识或者技能，然后才能达到大师级水平。顶尖的运动员、音乐家、棋手，需要花一万小时，才能让一项技艺至臻完美。<br>一万个小时是怎么算出来的？</p>
+<p>　　格拉德韦尔一直致力于把心理学实验、社会学研究，对古典音乐家、冰球运动员的统计调查改造成流畅、好懂的文字。在调查的基础上，他总结出了“一万小时定律”，他的研究显示，在任何领域取得成功的关键跟天分无关，只是练习的问题，需要练习1万小时——10年内，每周练习20小时，大概每天3小时。每天3小时的练习只是个平均数，在实际练习过程中，花费的时间可能不同。上世纪90年代初，瑞典心理学家安德斯·埃里克森在柏林音乐学院也做过调查，学小提琴的都大约从5岁开始练习，起初每个人都是每周练习两三个小时，但从8岁起，那些最优秀的学生练习时间最长，9岁时每周6小时，12岁8小时，14岁时16小时，直到20岁时每周30多小时，共1万小时。
+　　
+　　</p>
+<p>　　“一万小时法则”在成功者身上很容易得到验证。作为电脑天才，比尔·盖茨13岁时有机会接触到世界上最早的一批电脑终端机，开始学习计算机编程，7年后他创建微软公司时，他已经连续练习了7年的程序设计，超过了1万小时。<br>为什么是一万个小时？</p>
+<p>　　“一万小时法则”的关键在于，一万小时是最底限，而且没有例外之人。没有人仅用3000小时就能达到世界级水准；7500小时也不行；一定要10000小时——10年，每天3小时——无论你是谁。这等于是在告诉大家，一万小时的练习，是走向成功的必经之路。<br>　　<br>　　<br>　　音乐神童莫扎特，在6岁生日之前，他音乐家的父亲已经指导他练习了3500个小时。到他21岁写出最脍炙人口的第九号协奏曲时，可想而知他已经练习了多少小时。象棋神童鲍比·菲舍尔，17岁就奇迹般奠定了大师地位，但在这之前他也投入了10年时间的艰苦训练。<br>　　<br>　　在大量的调查研究中，科学家发现，无论是在对作曲家、篮球运动员、小说家、钢琴家还是象棋选手的研究中，这个数字——一万，反复出现。<br>　　     　　　　<br>　　这是“一万小时法则”被提出的事实论据。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>其实对于成功者来说，不管练习的过程枯燥与否，有趣与否，他们都必将付出远远超出常人的代价。心甘情愿花上一万个小时来打通任督二脉的人，大都不是寻常之辈。</p>
+<p>人生就是这样，没有不劳而获的事情，人们往往看到了别人的成功，却看不到别人的付出。。。。不经历风雨怎能见彩虹！  </p>
+<p>在前端的道路上是枯燥的，偶尔读读文章，可以净化你的心灵，沉淀你的心，努力吧，前端路漫漫兮，吾将上下而求索，愿你我在前端道路上更近一层楼。</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/20/philosophy1/" class="archive-article-date">
+  	<time datetime="2016-11-20T11:54:52.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-20</time>
+</a>
+      
+      
+	<div class="article-category tagcloud">
+	<i class="icon-price-tags"></i>
+	<a class="article-category-link" href="/categories/哲学/">哲学</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-canvas-drowboard" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/19/canvas-drowboard/">Canvas系列之七彩画板</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>以前总是在画画软件上画画，今天自己也写了一个</p>
+<p>七彩画板当然要有七中颜色了，你也可以获取更多地颜色</p>
+<p>先让我们看看效果如何：</p>
+<p><img src="http://a2.qpic.cn/psb?/V12txxLC164DyB/zVCUxIucgCdtu2799yI4kuEF7bdXd5vyV7WvN5tD05Q!/b/dAkBAAAAAAAA&amp;bo=ZwJkAgAAAAADACY!&amp;rf=viewer_4" alt="画板"></p>
+<h3 id="点击画笔开始绘画，点击颜色选择画笔的颜色，点击橡皮擦清除"><a href="#点击画笔开始绘画，点击颜色选择画笔的颜色，点击橡皮擦清除" class="headerlink" title="点击画笔开始绘画，点击颜色选择画笔的颜色，点击橡皮擦清除"></a>点击画笔开始绘画，点击颜色选择画笔的颜色，点击橡皮擦清除</h3><h3 id="结构如下："><a href="#结构如下：" class="headerlink" title="结构如下："></a>结构如下：</h3><pre><code><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"wrap"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">"canvas"</span> <span class="attr">width</span>=<span class="string">"600"</span> <span class="attr">height</span>=<span class="string">"500"</span>&gt;</span>画笔写字<span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">button</span>&gt;</span>橡皮擦<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">button</span>&gt;</span>画笔<span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"font"</span>&gt;</span><span class="tag">&lt;<span class="name">h3</span>&gt;</span>欢<span class="tag">&lt;<span class="name">br</span>/&gt;</span>迎<span class="tag">&lt;/<span class="name">h3</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">ul</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">"background-color:red;margin-left:100px;"</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">"background-color:orange"</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">"background-color:yellow"</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">"background-color:green"</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">"background-color:cyan"</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">"background-color:blue"</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">		<span class="tag">&lt;<span class="name">li</span> <span class="attr">style</span>=<span class="string">"background-color:purple"</span>&gt;</span><span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">	<span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+</code></pre><h3 id="先让我们获取元素-这里使用了ES6的写法"><a href="#先让我们获取元素-这里使用了ES6的写法" class="headerlink" title="先让我们获取元素 这里使用了ES6的写法"></a>先让我们获取元素 这里使用了ES6的写法</h3><p>如果不了解，可参考：<a href="http://blog.lxjwlt.com/front-end/2015/09/01/u-dont-know-queryselector.html" target="_blank" rel="external">lxjwlt’s blog</a></p>
+<pre><code>var canvas=document.querySelector(&apos;#canvas&apos;);
+var ctx=canvas.getContext(&apos;2d&apos;);
+
+var font=document.querySelector(&apos;.font&apos;);
+var btn=document.querySelectorAll(&apos;button&apos;);
+var li=document.querySelectorAll(&apos;li&apos;);
+</code></pre><h3 id="接下来就是画笔以及画笔的颜色"><a href="#接下来就是画笔以及画笔的颜色" class="headerlink" title="接下来就是画笔以及画笔的颜色"></a>接下来就是画笔以及画笔的颜色</h3><pre><code><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">btn[<span class="number">1</span>].onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	font.style.display=<span class="string">'none'</span>;</div><div class="line">	canvas.style.cursor=<span class="string">"url('pen.png'),pointer"</span>;</div><div class="line">	<span class="comment">//选择画笔的颜色</span></div><div class="line">	<span class="keyword">var</span> color=<span class="string">''</span>;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;li.length;i++)&#123;</div><div class="line">		li[i].onclick=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">			color=<span class="keyword">this</span>.style.backgroundColor;</div><div class="line">			<span class="built_in">console</span>.log(color)</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	canvas.onmousedown=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">		<span class="built_in">window</span>.onmousemove=<span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</div><div class="line">			ctx.fillStyle=color;</div><div class="line">			ctx.fillRect(event.offsetX,event.offsetY,<span class="number">5</span>,<span class="number">5</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	canvas.onmouseup = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">		<span class="built_in">window</span>.onmousemove=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h3 id="下面让我们完成橡皮擦"><a href="#下面让我们完成橡皮擦" class="headerlink" title="下面让我们完成橡皮擦"></a>下面让我们完成橡皮擦</h3><pre><code>```js
+
+    btn[0].onclick=function(){
+    canvas.onmousedown=function(){
+        window.onmousemove=function(event){
+            ctx.clearRect(event.offsetX,event.offsetY,20,20);
+        }
+    }
+    canvas.onmouseup = function(){
+        window.onmousemove=function(){}
+    }
+    canvas.style.cursor=&quot;url(&apos;xpc.cur&apos;),pointer&quot;;
+    }
+```        
+</code></pre><p>画板已经完成，查看源码请前往：<a href="https://github.com/guardLtw/drowboard" target="_blank" rel="external">my github</a>,希望对你有所帮助</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/19/canvas-drowboard/" class="archive-article-date">
+  	<time datetime="2016-11-19T07:23:24.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-19</time>
+</a>
+      
+      
+	<div class="article-category tagcloud">
+	<i class="icon-price-tags"></i>
+	<a class="article-category-link" href="/categories/Canvas/">Canvas</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-canvas-guaguale" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/19/canvas-guaguale/">Canvas系列之刮刮乐</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>看到几个朋友在玩刮刮乐，刚好最近在看canvas，就想着做一个刮刮乐，奖额自己定，想中多少就多少，是不是很嗨皮呢。。。。。。。当然，彩票虽好，但不要贪杯哦。。。。好的，言归正传，开始绘制了</p>
+<p>绘制之前我们看看效果图：</p>
+<p><img src="http://a3.qpic.cn/psb?/V12txxLC164DyB/KaQ0E5DXm1FYaGhg7GrpYxDgnpFLnZpF7V9ZbDaD1dY!/b/dHwBAAAAAAAA&amp;bo=QQELAgAAAAADB2s!&amp;rf=viewer_4" alt="guaguale"></p>
+<h2 id="一点简单地结构"><a href="#一点简单地结构" class="headerlink" title="一点简单地结构"></a>一点简单地结构</h2><pre><code><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"box"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>刮 刮 乐<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"jiang"</span>&gt;</span>奖<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"prize"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"content"</span>&gt;</span>500万<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">"canvas"</span> <span class="attr">width</span>=<span class="string">"300"</span> <span class="attr">height</span>=<span class="string">"200"</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+</code></pre><h2 id="再来一斤的样式"><a href="#再来一斤的样式" class="headerlink" title="再来一斤的样式"></a>再来一斤的样式</h2><pre><code><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.box</span>&#123;</div><div class="line">	<span class="attribute">margin</span>: <span class="number">60px</span> <span class="number">100px</span>;</div><div class="line">	<span class="attribute">width</span>:<span class="number">300px</span>;</div><div class="line">	<span class="attribute">height</span>:<span class="number">500px</span>;</div><div class="line">	<span class="attribute">border</span>:<span class="number">1px</span> solid red;</div><div class="line">	<span class="attribute">background</span>:<span class="built_in">rgba</span>(255,0,0,.8);</div><div class="line">&#125;</div><div class="line"><span class="selector-tag">h2</span>&#123;</div><div class="line">	<span class="attribute">text-align</span>: center;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">30px</span>;</div><div class="line">	<span class="attribute">color</span>:cyan;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.jiang</span>&#123;</div><div class="line">	<span class="attribute">width</span>:<span class="number">200px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">	<span class="attribute">border-radius</span>: <span class="number">50%</span>;</div><div class="line">	<span class="attribute">background-color</span>:<span class="built_in">rgba</span>(255,0,0,.3);</div><div class="line">	<span class="attribute">line-height</span>: <span class="number">200px</span>;</div><div class="line">	<span class="attribute">text-align</span>: center;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">60px</span>;</div><div class="line">	<span class="attribute">color</span>:gold;</div><div class="line">	<span class="attribute">margin</span>:<span class="number">20px</span> auto; </div><div class="line">&#125;</div><div class="line"><span class="selector-class">.prize</span>&#123;</div><div class="line">	<span class="attribute">height</span>:<span class="number">200px</span>;</div><div class="line">	<span class="attribute">position</span>: relative;</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.content</span>&#123;</div><div class="line">	<span class="attribute">width</span>:<span class="number">300px</span>;</div><div class="line">	<span class="attribute">height</span>: <span class="number">200px</span>;</div><div class="line">	<span class="attribute">background-color</span>:<span class="built_in">rgba</span>(0,0,255,0.1);</div><div class="line">	<span class="attribute">line-height</span>: <span class="number">200px</span>;</div><div class="line">	<span class="attribute">text-align</span>: center;</div><div class="line">	<span class="attribute">font-size</span>: <span class="number">60px</span>;</div><div class="line">	<span class="attribute">color</span>:purple;</div><div class="line">	<span class="attribute">margin</span>:<span class="number">20px</span> auto; </div><div class="line">&#125;</div><div class="line"><span class="selector-id">#canvas</span>&#123;</div><div class="line">	<span class="attribute">position</span>:absolute;</div><div class="line">	<span class="attribute">top</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">left</span>: <span class="number">0</span>;</div><div class="line">	<span class="attribute">cursor</span>: <span class="built_in">url</span>(<span class="string">'xpc.cur'</span>),pointer;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</code></pre><h3 id="相信大家看到这个设置了"><a href="#相信大家看到这个设置了" class="headerlink" title="相信大家看到这个设置了"></a>相信大家看到这个设置了</h3><pre><code>cursor: url(&apos;xpc.cur&apos;),pointer;
+改变光标的样式
+</code></pre><p>光标样式可以任你设置，但是也可以自定义设置哦，设置一个你喜欢的图案，用url引进去，后面加一个pointer，当然了，浏览器兼容图片的样式不同的，你要小心了。。。。。。这里我用的是.xpc格式的 png jpg 。。。。。。</p>
+<h2 id="好了，把剩余的都拿走把"><a href="#好了，把剩余的都拿走把" class="headerlink" title="好了，把剩余的都拿走把"></a>好了，把剩余的都拿走把</h2><pre><code><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> canvas=<span class="built_in">document</span>.querySelector(<span class="string">'#canvas'</span>)</div><div class="line"><span class="keyword">var</span> ctx=canvas.getContext(<span class="string">'2d'</span>)</div><div class="line">ctx.fillStyle=<span class="string">'lightgray'</span></div><div class="line">ctx.fillRect(<span class="number">0</span>,<span class="number">0</span>,<span class="number">300</span>,<span class="number">200</span>)</div><div class="line">ctx.save()</div><div class="line">ctx.font=<span class="string">'30px serif'</span></div><div class="line">ctx.fillStyle=<span class="string">'black'</span></div><div class="line">ctx.fillText(<span class="string">'刮奖区'</span>,<span class="number">100</span>,<span class="number">60</span>)</div><div class="line">ctx.save()</div><div class="line">ctx.font=<span class="string">'50px serif'</span></div><div class="line">ctx.strokeStyle=<span class="string">'red'</span></div><div class="line">ctx.strokeText(<span class="string">'大吉大利'</span>,<span class="number">50</span>,<span class="number">150</span>)</div><div class="line"></div><div class="line">canvas.onmousedown=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">		<span class="built_in">window</span>.onmousemove=<span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</div><div class="line">			ctx.clearRect(event.offsetX,event.offsetY,<span class="number">20</span>,<span class="number">20</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">canvas.onmouseup = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="built_in">window</span>.onmousemove=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+</code></pre><h2 id="祝君，下次玩刮刮乐中大奖！"><a href="#祝君，下次玩刮刮乐中大奖！" class="headerlink" title="祝君，下次玩刮刮乐中大奖！"></a>祝君，下次玩刮刮乐中大奖！</h2>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/19/canvas-guaguale/" class="archive-article-date">
+  	<time datetime="2016-11-19T07:23:08.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-19</time>
+</a>
+      
+      
+	<div class="article-category tagcloud">
+	<i class="icon-price-tags"></i>
+	<a class="article-category-link" href="/categories/Canvas/">Canvas</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-canvas-fivestar" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/18/canvas-fivestar/">Canvas系列之五角星</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><h3 id="绘制N个颜色不同，旋转角度不同，位置随机出现的五角星"><a href="#绘制N个颜色不同，旋转角度不同，位置随机出现的五角星" class="headerlink" title="绘制N个颜色不同，旋转角度不同，位置随机出现的五角星"></a>绘制N个颜色不同，旋转角度不同，位置随机出现的五角星</h3><h2 id="绘制画布就不讲啦-上篇已提到，很简单的"><a href="#绘制画布就不讲啦-上篇已提到，很简单的" class="headerlink" title="绘制画布就不讲啦 上篇已提到，很简单的"></a>绘制画布就不讲啦 上篇已提到，很简单的</h2><h2 id="好吧-绘制也很简单，我把它封装成函数了"><a href="#好吧-绘制也很简单，我把它封装成函数了" class="headerlink" title="好吧 绘制也很简单，我把它封装成函数了"></a>好吧 绘制也很简单，我把它封装成函数了</h2><p>函数如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fivepStar</span>(<span class="params">x,y,R,color=true,angle=true,stroke=true</span>)</span>&#123;</div><div class="line">		context.beginPath();<span class="comment">//开始</span></div><div class="line">		<span class="keyword">var</span> k=<span class="built_in">Math</span>.sin(<span class="number">18</span>*<span class="built_in">Math</span>.PI/<span class="number">180</span>)/<span class="built_in">Math</span>.sin(<span class="number">36</span>*<span class="built_in">Math</span>.PI/<span class="number">180</span>);</div><div class="line">			k=k.toFixed(<span class="number">2</span>);</div><div class="line">			r=k*R;<span class="comment">//大圆与小圆的关系</span></div><div class="line">		<span class="comment">/**************五角星偏转角度**************/</span></div><div class="line">		<span class="keyword">if</span> (angle===<span class="literal">true</span>) &#123;</div><div class="line">			angle=random(<span class="number">0</span>,<span class="number">361</span>);<span class="comment">//五角星随机偏转角度,以(1,0)为参考点</span></div><div class="line">		&#125;<span class="keyword">else</span>&#123;</div><div class="line">			angle=angle;<span class="comment">//自定义角度</span></div><div class="line">		&#125;</div><div class="line">		<span class="comment">/**************五角星颜色**************/</span></div><div class="line">		<span class="keyword">if</span> (color===<span class="literal">true</span>) &#123;</div><div class="line">			color=<span class="string">'rgba('</span>+random(<span class="number">0</span>,<span class="number">256</span>)+<span class="string">','</span>+random(<span class="number">0</span>,<span class="number">256</span>)+<span class="string">','</span>+random(<span class="number">0</span>,<span class="number">256</span>)+<span class="string">','</span>+<span class="built_in">Math</span>.random()+<span class="string">')'</span>;<span class="comment">//随机颜色</span></div><div class="line">		&#125;<span class="keyword">else</span>&#123;</div><div class="line">			color=color;<span class="comment">//自定义颜色</span></div><div class="line">		&#125;</div><div class="line">		<span class="comment">//五角星十点坐标</span></div><div class="line">		<span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)&#123;</div><div class="line">			context.lineTo(R*<span class="built_in">Math</span>.cos((<span class="number">72</span>*i+angle)*<span class="built_in">Math</span>.PI/<span class="number">180</span>)+x,R*<span class="built_in">Math</span>.sin((<span class="number">72</span>*i+angle)*<span class="built_in">Math</span>.PI/<span class="number">180</span>)+y);</div><div class="line">			context.lineTo(r*<span class="built_in">Math</span>.cos((<span class="number">72</span>*i+<span class="number">36</span>+angle)*<span class="built_in">Math</span>.PI/<span class="number">180</span>)+x,r*<span class="built_in">Math</span>.sin((<span class="number">72</span>*i+<span class="number">36</span>+angle)*<span class="built_in">Math</span>.PI/<span class="number">180</span>)+y)</div><div class="line">		&#125;</div><div class="line">		<span class="comment">//五角星起点坐标</span></div><div class="line">		context.lineTo(R*<span class="built_in">Math</span>.cos(angle*<span class="built_in">Math</span>.PI/<span class="number">180</span>)+x,R*<span class="built_in">Math</span>.sin(angle*<span class="built_in">Math</span>.PI/<span class="number">180</span>)+y);</div><div class="line">		context.fillStyle=color;</div><div class="line">		context.fill();</div><div class="line">		<span class="keyword">if</span> (stroke) &#123;</div><div class="line">			context.stroke();</div><div class="line">		&#125;</div><div class="line">		context.closePath();</div><div class="line">		<span class="function"><span class="keyword">function</span> <span class="title">random</span>(<span class="params">m,n</span>)</span>&#123;</div><div class="line">			<span class="keyword">var</span> num=<span class="built_in">Math</span>.max(m,n)-<span class="built_in">Math</span>.min(m,n);</div><div class="line">			<span class="keyword">return</span> <span class="built_in">Math</span>.round(<span class="built_in">Math</span>.random()*num+<span class="built_in">Math</span>.min(m,n));</div><div class="line">		&#125;</div><div class="line">	&#125;</div></pre></td></tr></table></figure>
+<h3 id="其中"><a href="#其中" class="headerlink" title="其中"></a>其中</h3><pre><code>* x为五角星中心横坐标
+* y为五角星中心纵坐标
+* R为五角星外五点外接圆半径
+* color五角星颜色 默认随机颜色rgba格式
+    如果需要自定义颜色，直接把参数改为自定义颜色为字符串类型
+     如果需要随机且不需要透明可去代码rgba处把Math.random()改为1
+* angle五角星偏转角度,以(1,0)为参考点 默认随机偏转
+    如果不需要随机可自定义偏转角度 参数为数值类型
+* stroke五角星边框 默认有 如果不需要参数改为false
+**
+</code></pre><h2 id="封装随机函数"><a href="#封装随机函数" class="headerlink" title="封装随机函数"></a>封装随机函数</h2><pre><code>function random(m,n){
+        var num=Math.max(m,n)-Math.min(m,n);
+        return Math.round(Math.random()*num+Math.min(m,n));
+    }
+</code></pre><p>前往此处：<a href="https://github.com/guardLtw/fiveStar" target="_blank" rel="external">my github</a>,可以下载源码</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/18/canvas-fivestar/" class="archive-article-date">
+  	<time datetime="2016-11-18T14:39:17.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-18</time>
+</a>
+      
+      
+	<div class="article-category tagcloud">
+	<i class="icon-price-tags"></i>
+	<a class="article-category-link" href="/categories/Canvas/">Canvas</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-canvas-snake" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/17/canvas-snake/">Canvas系列之贪吃蛇</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h2><p>canvas画布  食物  蛇 键盘事件</p>
+<h3 id="1-canvas画布"><a href="#1-canvas画布" class="headerlink" title="1.canvas画布"></a>1.canvas画布</h3><p>绘制就很简单啦 你可以给点你喜欢的样式</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">width</span>=<span class="string">"600"</span> <span class="attr">height</span>=<span class="string">"400"</span>&gt;</span></div><div class="line">	你的浏览器不支持canvas，请使用chrome或更高版本的浏览器！</div><div class="line"><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>当然，你要先获取画布哦</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> canvas=<span class="built_in">document</span>.querySelector(<span class="string">'canvas'</span>);</div><div class="line">	<span class="keyword">var</span> ctx=canvas.getContext(<span class="string">'2d'</span>);</div></pre></td></tr></table></figure>
+<h3 id="2-随机放置食物"><a href="#2-随机放置食物" class="headerlink" title="2.随机放置食物"></a>2.随机放置食物</h3><p>x表示食物的大小  map是存放蛇身单元位置</p>
+<pre><code>var foodx=foody=?;定义食物的起点坐标
+</code></pre><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">food</span>(<span class="params">x</span>)</span>&#123;</div><div class="line">	foodx=<span class="built_in">Math</span>.ceil(<span class="built_in">Math</span>.random()*canvas.width/x)*x-x;</div><div class="line">	foody=<span class="built_in">Math</span>.ceil(<span class="built_in">Math</span>.random()*canvas.height/x)*x-x;</div><div class="line">	<span class="comment">//判断不让食物随机到蛇身上</span></div><div class="line">	map.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">		<span class="keyword">if</span> (e.x==foodx&amp;&amp;e.y==foody) &#123;</div><div class="line">			food(<span class="number">10</span>);</div><div class="line">		&#125;</div><div class="line">	&#125;)</div><div class="line">	ctx.fillStyle=<span class="string">'#000'</span>;<span class="comment">//食物颜色</span></div><div class="line">	ctx.fillRect(foodx,foody,x,x);<span class="comment">//绘制矩形</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="3-蛇的移动及绘制"><a href="#3-蛇的移动及绘制" class="headerlink" title="3.蛇的移动及绘制"></a>3.蛇的移动及绘制</h3><p>1.先做一个移动方向的判断</p>
+<p>2.在做一个是否撞墙和撞自身的判断，这里用了<span style="color:red">forEach</span>,你也可以用for循环代替</p>
+<p>3.一个保证起始蛇身的判断</p>
+<p>4.接下就就是绘制每一个蛇身单元，多个蛇身单元组成蛇身</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">moveSnake</span>(<span class="params"></span>)</span>&#123;</div><div class="line">		<span class="keyword">switch</span>(direction)&#123;</div><div class="line">			<span class="keyword">case</span> <span class="number">37</span>:x-=size;<span class="keyword">break</span>;<span class="comment">//左</span></div><div class="line">			<span class="keyword">case</span> <span class="number">38</span>:y-=size;<span class="keyword">break</span>;<span class="comment">//上</span></div><div class="line">			<span class="keyword">case</span> <span class="number">39</span>:x+=size;<span class="keyword">break</span>;<span class="comment">//右</span></div><div class="line">			<span class="keyword">case</span> <span class="number">40</span>:y+=size;<span class="keyword">break</span>;<span class="comment">//下</span></div><div class="line">		&#125;</div><div class="line">		<span class="comment">//判断是否撞墙，撞墙则结束</span></div><div class="line">		<span class="keyword">if</span> (x&lt;<span class="number">0</span>||y&lt;<span class="number">0</span>||x+size&gt;canvas.width||y+size&gt;canvas.height) &#123;</div><div class="line">			end();</div><div class="line">		&#125;</div><div class="line">		map.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">			<span class="keyword">if</span> (e.x==x&amp;&amp;e.y==y) &#123;</div><div class="line">				end();</div><div class="line">			&#125;</div><div class="line">		&#125;)</div><div class="line">		<span class="keyword">if</span> (map.length&gt;snakeLength) &#123;<span class="comment">//保持蛇长</span></div><div class="line">			<span class="keyword">var</span> last=map.shift();<span class="comment">//删除数组第一项，并返回该元素</span></div><div class="line">			ctx.clearRect(last.x,last.y,size,size)</div><div class="line">		&#125;</div><div class="line">		<span class="comment">//把单元蛇身保存并绘制</span></div><div class="line">		map.push(&#123;<span class="string">"x"</span>:x,<span class="string">"y"</span>:y&#125;);</div><div class="line">		ctx.fillStyle=<span class="string">'cyan'</span>;</div><div class="line">		ctx.fillRect(x,y,size,size);</div><div class="line">		<span class="keyword">if</span> (x==foodx&amp;&amp;y==foody) &#123;</div><div class="line">			food(<span class="number">10</span>);</div><div class="line">			snakeLength++;</div><div class="line">			i++;</div><div class="line">			score.value=i*<span class="number">10</span>;</div><div class="line">		&#125;</div><div class="line">	&#125;</div></pre></td></tr></table></figure>
+<h3 id="这里写了当游戏结束时，显示的函数"><a href="#这里写了当游戏结束时，显示的函数" class="headerlink" title="这里写了当游戏结束时，显示的函数"></a>这里写了当游戏结束时，显示的函数</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">end</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	clearInterval(timer);</div><div class="line">	<span class="keyword">if</span> (score.value&lt;<span class="number">100</span>) &#123;</div><div class="line">		alert(<span class="string">'继续努力哦!\nGAME OVER'</span>)</div><div class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span> (score.value&gt;=<span class="number">100</span>) &#123;</div><div class="line">		alert(<span class="string">'哎呦，不错!\nGAME OVER'</span>)</div><div class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span> (score.value&gt;=<span class="number">400</span>) &#123;</div><div class="line">		alert(<span class="string">'非常棒!\nGAME OVER'</span>)</div><div class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span> (score.value&gt;=<span class="number">800</span>) &#123;</div><div class="line">		alert(<span class="string">'你已无人能挡!\nGAME OVER'</span>)</div><div class="line">	&#125;<span class="keyword">else</span> <span class="keyword">if</span> (score.value&gt;=<span class="number">1600</span>) &#123;</div><div class="line">		alert(<span class="string">'无敌战神!\nGAME OVER'</span>)</div><div class="line">	&#125;</div><div class="line">	<span class="built_in">window</span>.location=<span class="built_in">window</span>.location;<span class="comment">//刷新页面</span></div><div class="line">	<span class="keyword">return</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="增加游戏难度"><a href="#增加游戏难度" class="headerlink" title="增加游戏难度"></a>增加游戏难度</h3><p>你可以发挥你的想象来则加游戏难度，比如增加蛇的运动速度，canvas的画布变小等等</p>
+<h2 id="接下来就要讲讲键盘事件了"><a href="#接下来就要讲讲键盘事件了" class="headerlink" title="接下来就要讲讲键盘事件了"></a>接下来就要讲讲键盘事件了</h2><p>下面是键盘对应值：<br><img src="http://a1.qpic.cn/psb?/V12txxLC164DyB/D4d9FGDdAF3pHgnpghynJDyMQ41Xv3fuoVaPzULuIKs!/b/dP8AAAAAAAAA&amp;bo=bgLFAgAAAAADB4k!&amp;rf=viewer_4" alt="keycode"></p>
+<p>按下键盘改变方向，这里我做了个space控制游戏的开始和暂停设置</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> code=<span class="literal">null</span>;</div><div class="line"><span class="keyword">var</span> space=<span class="literal">true</span>;</div><div class="line"><span class="built_in">document</span>.onkeydown=<span class="function"><span class="keyword">function</span>(<span class="params">event</span>)</span>&#123;</div><div class="line">	<span class="keyword">if</span> (event.keyCode==<span class="number">32</span>) &#123;</div><div class="line">		<span class="keyword">if</span> (space) &#123;</div><div class="line">			timer=setInterval(moveSnake,<span class="number">60</span>);</div><div class="line">			space=!space;</div><div class="line">		&#125;<span class="keyword">else</span>&#123;</div><div class="line">			clearInterval(timer);</div><div class="line">			space=!space;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span>;</div><div class="line">	&#125;</div><div class="line">	<span class="comment">//判断如果是相反键则失效</span></div><div class="line">	<span class="keyword">if</span> (<span class="built_in">Math</span>.abs(code-event.keyCode)==<span class="number">2</span>) &#123;</div><div class="line">		code=code;</div><div class="line">	&#125;<span class="keyword">else</span>&#123;</div><div class="line">		code=event.keyCode;</div><div class="line">	&#125;</div><div class="line">	<span class="keyword">switch</span>(code)&#123;</div><div class="line">		<span class="keyword">case</span> <span class="number">37</span>:direction=<span class="number">37</span>;<span class="keyword">break</span>;<span class="comment">//左</span></div><div class="line">		<span class="keyword">case</span> <span class="number">38</span>:direction=<span class="number">38</span>;<span class="keyword">break</span>;<span class="comment">//下</span></div><div class="line">		<span class="keyword">case</span> <span class="number">39</span>:direction=<span class="number">39</span>;<span class="keyword">break</span>;<span class="comment">//右</span></div><div class="line">		<span class="keyword">case</span> <span class="number">40</span>:direction=<span class="number">40</span>;<span class="keyword">break</span>;<span class="comment">//上</span></div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>如果需要源码，请前往：我的 <a href="https://github.com/guardLtw/snake" target="_blank" rel="external">github</a>,转载请注明出处，谢谢！</p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/17/canvas-snake/" class="archive-article-date">
+  	<time datetime="2016-11-17T11:56:21.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-17</time>
+</a>
+      
+      
+	<div class="article-category tagcloud">
+	<i class="icon-price-tags"></i>
+	<a class="article-category-link" href="/categories/Canvas/">Canvas</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-css-clock" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/16/css-clock/">简易时钟</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="基于css3、html的简约时钟"><a href="#基于css3、html的简约时钟" class="headerlink" title="基于css3、html的简约时钟"></a>基于css3、html的简约时钟</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"time"</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">span</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">nav</span> <span class="attr">class</span>=<span class="string">"hours"</span>&gt;</span><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">nav</span> <span class="attr">class</span>=<span class="string">"minutes"</span>&gt;</span><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">nav</span> <span class="attr">class</span>=<span class="string">"seconds"</span>&gt;</span><span class="tag">&lt;/<span class="name">nav</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="1-表盘样式"><a href="#1-表盘样式" class="headerlink" title="1.表盘样式"></a>1.表盘样式</h3><p>表盘由一个div和12个span组成</p>
+<h3 id="2-时-分-秒"><a href="#2-时-分-秒" class="headerlink" title="2.时 分 秒"></a>2.时 分 秒</h3><p>由三个div组成 </p>
+<h2 id="js部分"><a href="#js部分" class="headerlink" title="js部分"></a>js部分</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> timer=setInterval(fun,<span class="number">1000</span>);</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fun</span>(<span class="params"></span>)</span>&#123;</div><div class="line">	<span class="keyword">var</span> time=<span class="keyword">new</span> <span class="built_in">Date</span>();</div><div class="line">	<span class="keyword">var</span> hours=time.getHours();</div><div class="line">	<span class="keyword">var</span> minutes=time.getMinutes();</div><div class="line">	<span class="keyword">var</span> seconds=time.getSeconds();</div><div class="line">	<span class="keyword">var</span> ms=time.getMilliseconds();</div><div class="line">	<span class="built_in">document</span>.querySelector(<span class="string">".hours"</span>).style.transform=<span class="string">'rotateZ('</span>+(hours*<span class="number">30</span>+minutes/<span class="number">2</span>+seconds/<span class="number">120</span>)+<span class="string">'deg)'</span>;</div><div class="line">	<span class="built_in">document</span>.querySelector(<span class="string">".minutes"</span>).style.transform=<span class="string">'rotateZ('</span>+(minutes*<span class="number">6</span>+seconds/<span class="number">10</span>)+<span class="string">'deg)'</span>;</div><div class="line">	<span class="built_in">document</span>.querySelector(<span class="string">".seconds"</span>).style.transform=<span class="string">'rotateZ('</span>+seconds*<span class="number">6</span>+<span class="string">'deg)'</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><p><img src="http://qpic.cn/Q9Gh9Cu4S" alt="clock"></p>
+<p>这个时钟很简单的，css样式随便你写，如果有需要，请传送到我的：<a href="https://github.com/guardLtw/clock" target="_blank" rel="external">github</a></p>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/11/16/css-clock/" class="archive-article-date">
+  	<time datetime="2016-11-16T14:02:46.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-11-16</time>
+</a>
+      
+      
+	<div class="article-category tagcloud">
+	<i class="icon-price-tags"></i>
+	<a class="article-category-link" href="/categories/CSS/">CSS</a>
+	</div>
+
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+    </nav>
+  
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 刘家浩
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: false,
+		animate: true,
+		isHome: true,
+		isPost: false,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/心-感/" style="font-size: 10px;">心 感</a> <a href="/tags/诗词/" style="font-size: 20px;">诗词</a>
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="https://jasonellen.github.io/">南南的博客</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="https://yinxiaoqiang11.github.io">小强的博客</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接3</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接4</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接5</a>
+  	        
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">友情链接6</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
